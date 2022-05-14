@@ -6,5 +6,5 @@ Fate Grand order themed with Assets taken from [Atlas Academy](https://api.atlas
 - Pick a card that has not been picked before to increase your score
 
 # Links
-- [Live Demo]((https://remiferiaa.github.io/memory-card/))
+- [Live Demo](https://remiferiaa.github.io/memory-card/)
 
