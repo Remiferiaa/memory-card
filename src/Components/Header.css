@@ -1,0 +1,29 @@
+.header {
+    height: 15vh;
+    text-align: center;
+    font-weight: bolder;
+    padding: 36px;
+    background-color: rgba(30, 100, 100, 0.5);
+    color: white;
+    border-bottom: 10px solid blue;
+}
+
+.top {
+    font-size: 4rem;
+}
+
+.instruct {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .top, .instruct {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .top, .instruct {
+        font-size: 1rem
+    }
+}

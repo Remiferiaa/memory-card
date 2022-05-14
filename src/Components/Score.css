@@ -1,0 +1,32 @@
+.scoreHold {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px
+}
+
+.score {
+    background-color: rgb(30, 49, 88);
+    border: 3px solid rgb(95, 9, 112);
+    border-radius: 12px;
+    padding: 6px;
+    margin: 5vh;
+    width: 300px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.current {
+    color: rgb(34, 231, 83) ;
+}
+
+.high {
+    color: rgb(238, 30, 30);
+}
+
+@media screen and (max-width: 1000px) {
+    .scoreHold {
+        flex-direction: column;
+    }
+}

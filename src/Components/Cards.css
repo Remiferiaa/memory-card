@@ -1,0 +1,38 @@
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.cardGrid {
+    display: grid;
+    grid: 1fr 1fr/ repeat(auto-fit, 200px);
+    gap: 24px;
+    align-content: center;
+    justify-content: center;
+}
+
+.materials {    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 5px solid rgb(21, 150, 96);
+    background-color: black;
+    width: 200px;
+}
+
+.itemName {
+    font-weight: bolder;
+    background-color: white;
+    color: black;
+}
+
+img {
+    background-color: white;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .cardGrid {
+        grid: 1fr/ repeat(1, 200px)
+    }
+}
