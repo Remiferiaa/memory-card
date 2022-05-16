@@ -1,11 +1,11 @@
 .header {
-    height: 15vh;
+    min-height: 10vh;
     text-align: center;
     font-weight: bolder;
-    padding: 36px;
+    padding: 28px;
     background-color: rgba(30, 100, 100, 0.5);
     color: white;
-    border-bottom: 10px solid blue;
+    border-bottom: 5px solid blue;
 }
 
 .top {

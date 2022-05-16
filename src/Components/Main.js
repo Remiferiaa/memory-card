@@ -49,7 +49,7 @@ const Main = () => {
     }
 
     return (
-        <div className="game">
+        <div className="game" style={{display: "flex", flexDirection: "column", justifyContent:"center", alignContent:"center"}}>
             <Score score={score} high={highScore} />
             <Cards item={cardList} refresh={winCheck} />
         </div>

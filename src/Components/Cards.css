@@ -5,8 +5,8 @@ p {
 
 .cardGrid {
     display: grid;
-    grid: 1fr 1fr/ repeat(auto-fit, 200px);
-    gap: 24px;
+    grid-template-columns:  repeat(4, 1fr);
+    gap: 48px;
     align-content: center;
     justify-content: center;
 }
@@ -15,19 +15,24 @@ p {
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 150px;
+    height: 170px;
     border: 5px solid rgb(21, 150, 96);
-    background-color: black;
-    width: 200px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.materials:hover {
+    transform: scale(1.2);
 }
 
 .itemName {
     font-weight: bolder;
-    background-color: white;
     color: black;
 }
 
 img {
-    background-color: white;
+    align-self: center;
 }
 
 
