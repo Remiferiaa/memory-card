@@ -126,11 +126,24 @@ img {
     .score{
         margin: 10px;
     }
+
+    .header {
+        background-color: rgba(30,100,100,.5);
+        border-bottom: 2px solid blue;
+        color: #fff;
+        font-weight: bolder;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .top, .instruct {
+        font-size: 10px
+    }
 }
 
 @media screen and (max-width: 500px) {
     .top, .instruct {
-        font-size: 1rem
+        font-size: 6px
     }
 
     .materials {
