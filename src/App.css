@@ -1,4 +1,4 @@
-body {
+body, p {
     margin: 0;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -15,3 +15,155 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.cardGrid {
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);
+    gap: 48px;
+    align-content: center;
+    justify-content: center;
+}
+
+.materials {    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 150px;
+    height: 170px;
+    border: 5px solid rgb(21, 150, 96);
+    background-color: white;
+    transition: 0.5s;
+}
+
+.materials:hover {
+    transform: scale(1.2);
+}
+
+.itemName {
+    font-weight: bolder;
+    color: black;
+}
+
+img {
+    align-self: center;
+}
+
+.header {
+    min-height: 10vh;
+    text-align: center;
+    font-weight: bolder;
+    padding: 28px;
+    background-color: rgba(30, 100, 100, 0.5);
+    color: white;
+    border-bottom: 5px solid blue;
+}
+
+.top {
+    font-size: 4rem;
+}
+
+.instruct {
+    font-size: 2rem;
+}
+
+.scoreHold {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px
+}
+
+.score {
+    background-color: rgb(30, 49, 88);
+    border: 3px solid rgb(95, 9, 112);
+    border-radius: 12px;
+    padding: 6px;
+    margin: 5vh;
+    width: 300px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.current {
+    color: rgb(34, 231, 83) ;
+}
+
+.high {
+    color: rgb(238, 30, 30);
+}
+
+@media screen and (max-width: 1200px) {
+    .top, .instruct {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .materials {
+        width: 60px;
+        height: 60px;
+    }
+
+    img {
+        width: 32px;
+    }
+
+    .itemName {
+        font-size: 8px;
+    }
+
+    .cardGrid {
+        grid: 1fr/ repeat(4, 100px);
+        gap: 4px
+    }
+
+    .scoreHold {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .score{
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .top, .instruct {
+        font-size: 1rem
+    }
+
+    .materials {
+        width: 30px;
+        height: 30px;
+    }
+
+    img {
+        width: 16px;
+    }
+
+    .itemName {
+        font-size: 4px;
+    }
+
+    .cardGrid {
+        grid: 1fr/ repeat(4, 50px);
+        gap: 4px
+    }
+
+    .materials {
+        border: 1px solid rgb(21, 150, 96);;
+    }
+
+    .scoreHold {
+        flex-direction: row;
+    }
+
+    .score {
+        width: 100px;
+        font-size: 8px;
+        border: 1px solid rgb(95, 9, 112);
+    }
+}
+
+
